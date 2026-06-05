@@ -1,2 +1,125 @@
 @import "tailwindcss";
 
+:root {
+  --primary: rgb(179, 144, 99);
+  --secondary: #f5f2ed;
+  --bg: #ffffff;
+  --text: #58606e;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar {
+  @apply flex items-center justify-between font-medium px-4 py-5 md:py-7;
+}
+
+.logo .brand-name {
+  font-family: "Elsie Swash Caps", serif;
+  @apply text-[var(--primary)] text-3xl;
+}
+
+.nav-list {
+  @apply hidden sm:flex justify-between items-center gap-5 text-sm text-[var(--text)];
+}
+
+.nav-list ul {
+  @apply flex justify-evenly items-center gap-6 mr-5;
+}
+
+.nav-link {
+  @apply relative text-[var(--text)] text-sm pb-1.5 transition-colors duration-300 ease-in-out;
+  font-family: "Manrope", sans-serif;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-full h-[1.5px] bg-[var(--primary)];
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.nav-link.active,
+.nav-link:hover {
+  @apply text-[var(--primary)];
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 18px;
+}
+
+.nav-icons .icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--primary);
+  transition: transform 0.2s ease;
+}
+
+.nav-icons .icon:hover {
+  transform: scale(1.05);
+}
+
+.dropdown-list {
+  @apply flex flex-col gap-2 w-36 py-3 px-5 bg-[var(--secondary)] text-[var(--text)] rounded;
+}
+
+.dropdown-list .list-item {
+  @apply flex items-center gap-2 cursor-pointer hover:text-[var(--primary)];
+}
+
+.cart-count {
+  @apply absolute right-[-7px] bottom-[-7px] w-4 text-center leading-4 bg-[var(--primary)] text-[var(--bg)] aspect-square rounded-full text-[8px];
+}
+
+.navbar-overlay {
+  @apply fixed inset-0 bg-black/30 opacity-0 pointer-events-none transition-all duration-300;
+  backdrop-filter: blur(6px);
+}
+
+.navbar-overlay.open {
+    @apply opacity-100 pointer-events-auto;
+}
+
+.nav-sidebar {
+    @apply absolute top-0 right-0 h-full w-72 bg-[var(--bg)] shadow-2xl transform translate-x-full transition-transform duration-300 rounded-l-2xl;
+}
+
+.navbar-overlay.open .nav-sidebar {
+    @apply translate-x-0;
+}
+
+.nav-header {
+  @apply flex items-center gap-3 px-6 py-5 border-b border-[rgba(0,0,0,0.05)] text-[var(--text)] font-medium cursor-pointer;
+}
+
+.nav-header span {
+    @apply text-sm tracking-wide;
+}
+
+.mobile-nav {
+    @apply flex flex-col mt-2;
+}
+
+.mobile-nav a {
+    @apply px-8 py-4 text-[15px] text-[var(--text)] border-b border-[rgba(0,0,0,0.04)] transition-colors duration-200 rounded-md tracking-wide;
+}
+
+.mobile-nav a:hover {
+    @apply text-[var(--primary)] bg-[var(--secondary)];
+}
+
+.mobile-nav a.active {
+    @apply text-[var(--primary)]
+}
