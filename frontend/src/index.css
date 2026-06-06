@@ -11,10 +11,12 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
+/* Navbar */
 .navbar {
-  @apply flex items-center justify-between font-medium px-4 py-5 md:py-7;
+  @apply flex items-center justify-between font-medium px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-5 md:py-7 bg-transparent;
 }
 
 .logo .brand-name {
@@ -23,7 +25,7 @@ body {
 }
 
 .nav-list {
-  @apply hidden sm:flex justify-between items-center gap-5 text-sm text-[var(--text)];
+  @apply hidden sm:flex justify-between items-center mr-2 gap-5 text-sm text-[var(--text)];
 }
 
 .nav-list ul {
@@ -89,15 +91,15 @@ body {
 }
 
 .navbar-overlay.open {
-    @apply opacity-100 pointer-events-auto;
+  @apply opacity-100 pointer-events-auto;
 }
 
 .nav-sidebar {
-    @apply absolute top-0 right-0 h-full w-72 bg-[var(--bg)] shadow-2xl transform translate-x-full transition-transform duration-300 rounded-l-2xl;
+  @apply absolute top-0 right-0 h-full w-72 bg-[var(--bg)] shadow-2xl transform translate-x-full transition-transform duration-300 rounded-l-2xl;
 }
 
 .navbar-overlay.open .nav-sidebar {
-    @apply translate-x-0;
+  @apply translate-x-0;
 }
 
 .nav-header {
@@ -105,21 +107,66 @@ body {
 }
 
 .nav-header span {
-    @apply text-sm tracking-wide;
+  @apply text-sm tracking-wide;
 }
 
 .mobile-nav {
-    @apply flex flex-col mt-2;
+  @apply flex flex-col mt-2;
 }
 
 .mobile-nav a {
-    @apply px-8 py-4 text-[15px] text-[var(--text)] border-b border-[rgba(0,0,0,0.04)] transition-colors duration-200 rounded-md tracking-wide;
+  @apply px-8 py-4 text-[15px] text-[var(--text)] border-b border-[rgba(0,0,0,0.04)] transition-colors duration-200 rounded-md tracking-wide;
 }
 
 .mobile-nav a:hover {
-    @apply text-[var(--primary)] bg-[var(--secondary)];
+  @apply text-[var(--primary)] bg-[var(--secondary)];
 }
 
 .mobile-nav a.active {
-    @apply text-[var(--primary)]
+  @apply text-[var(--primary)];
 }
+
+/* Home - HERO */
+.hero {
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24;
+}
+
+.hero-content {
+  @apply flex flex-col text-center lg:text-left gap-5 max-w-2xl;
+}
+
+.hero-content p {
+  font-family: "Cormorant Garamond", serif;
+  @apply text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] leading-tight;
+}
+
+.hero-content button {
+  @apply bg-transparent border border-[var(--primary)] py-2 px-6 md:py-3 md:px-10 cursor-pointer w-fit rounded-full mx-auto lg:mx-0;
+}
+
+.hero-btn {
+  @apply text-[var(--primary)] text-sm md:text-lg lg:text-xl;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero-img {
+  @apply relative flex justify-center items-center;
+}
+
+.hero-img img {
+  @apply object-cover rounded-xl;
+}
+
+.hero-main-img {
+  @apply w-[75vw] sm:w-[320px] md:w-[380px] lg:w-[400px] h-[450px] sm:h-[500px] lg:h-[550px] object-cover rounded-lg md:mr-14;
+}
+
+.hero-img .hero-accent-img {
+  @apply absolute top-[55%] right-[-30px] translate-y-[-50%] w-28 h-40 sm:w-32 sm:h-48 md:w-36 md:h-52 lg:w-44 lg:h-[250px];
+  border-radius: 90px 90px 0 0;
+}
+
+.img-icon {
+  @apply absolute top-[228px] right-1 md:top-[255px] md:right-4 lg:top-[276px] lg:left-[374px] text-white text-4xl z-10 opacity-70 cursor-pointer transition-transform duration-500 hover:scale-105 hover:opacity-100;
+}
+
