@@ -25,7 +25,7 @@ const Hero = () => {
           alt="hero first img"
           className="hero-main-img"
         />
-        <CirclePlay className="img-icon" size={48} />
+        <CirclePlay className="img-icon" size={48} strokeWidth={1} />
         <img
           src="https://res.cloudinary.com/dhjf7rok5/image/upload/v1780218341/Aureline/Luxury_Gold_Jewellery_That_Looks_So_Expensive_mcth8k.jpg"
           alt="hero second img"

@@ -170,3 +170,26 @@ body {
   @apply absolute top-[228px] right-1 md:top-[255px] md:right-4 lg:top-[276px] lg:left-[374px] text-white text-4xl z-10 opacity-70 cursor-pointer transition-transform duration-500 hover:scale-105 hover:opacity-100;
 }
 
+/* FEATURES */
+.features-grid {
+  @apply bg-[var(--bg)] flex justify-around items-center w-full py-12 px-5;
+}
+
+.features-grid div{
+  @apply flex flex-col justify-center items-center gap-2.5;
+}
+
+.features-grid div h3 {
+  @apply font-semibold;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.features-grid div p {
+  @apply text-center w-[68%] text-sm opacity-80 tracking-wider;
+  font-family: "Manrope", sans-serif;
+}
+
+.features-grid .icon {
+  color: var(--primary);
+}
+
