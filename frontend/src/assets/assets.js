@@ -4,65 +4,65 @@ export const products = [
     name: "Golden Grace Necklace Set",
     description: "Elegant handcrafted gold-plated necklace set designed for evening wear and special occasions.",
     price: 320,
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326633/Aureline/Golden_Grace_Sparkle_bsarjv.jpg",
+    image: ["https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326633/Aureline/Golden_Grace_Sparkle_bsarjv.jpg"],
     code: "AGN-001",
     tag: "Exclusive",
     color: ["Gold"],
     sizes: [],
     date: "2026-01-10",
-    featured: true
+    signatured: true
   },
   {
     _id: "2",
     name: "Ivory Silk Evening Dress",
     description: "Soft silk evening dress with a flowing silhouette, perfect for luxury events.",
     price: 410,
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780325600/Aureline/check_link_wumen_fashion_new_trend_kfeya1.jpg",
+    image: ["https://res.cloudinary.com/dhjf7rok5/image/upload/v1780325600/Aureline/check_link_wumen_fashion_new_trend_kfeya1.jpg"],
     code: "ISD-002",
     tag: "Best Seller",
     color: ["Ivory"],
     sizes: ["S", "M", "L"],
     date: "2026-01-12",
-    featured: true
+    signatured: false
   },
   {
     _id: "3",
     name: "Cream Leather Top Handle Bag",
     description: "Minimal luxury handbag with structured design and premium leather finish.",
     price: 210,
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326882/Aureline/Luxury_Cream_Top_Handle_Bag_with_Scarf___Elegant_Designer_Style_Handbag_for_Women_iwocmk.jpg",
+    image: ["https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326882/Aureline/Luxury_Cream_Top_Handle_Bag_with_Scarf___Elegant_Designer_Style_Handbag_for_Women_iwocmk.jpg"],
     code: "CLB-003",
     tag: "Handmade",
     color: ["Cream", "Beige"],
     sizes: [],
     date: "2026-01-08",
-    featured: false
+    signatured: true
   },
   {
     _id: "4",
     name: "Elegant Silk Scarf",
     description: "Lightweight silk scarf with soft texture and luxury print styling.",
     price: 130,
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326898/Aureline/Elegant_Imitation_Silk_Oversized_Shawl_Scarf_oygjym.jpg",
+    image: ["https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326898/Aureline/Elegant_Imitation_Silk_Oversized_Shawl_Scarf_oygjym.jpg"],
     code: "ESS-004",
     tag: "Exclusive",
     color: ["Beige", "Gold"],
     sizes: [],
     date: "2026-01-05",
-    featured: false
+    signatured: true
   },
   {
     _id: "5",
     name: "Ivory Silk Suit Set",
     description: "Tailored silk suit set designed for modern elegance and formal wear.",
     price: 260,
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780325601/Aureline/silk_suit_o2thcw.jpg",
+    image: ["https://res.cloudinary.com/dhjf7rok5/image/upload/v1780325601/Aureline/silk_suit_o2thcw.jpg"],
     code: "ISS-005",
     tag: "Best Seller",
     color: ["Ivory"],
     sizes: ["M", "L", "XL"],
     date: "2026-01-15",
-    featured: true
+    signatured: true
   },
   {
     _id: "6",
@@ -75,7 +75,7 @@ export const products = [
     color: ["Beige"],
     sizes: [],
     date: "2026-01-18",
-    featured: false
+    signatured: true
   },
   {
     _id: "7",
@@ -88,7 +88,7 @@ export const products = [
     color: ["Gold"],
     sizes: [],
     date: "2026-01-20",
-    featured: false
+    signatured: true
   },
   {
     _id: "8",
@@ -101,7 +101,7 @@ export const products = [
     color: ["Pink"],
     sizes: ["S", "M"],
     date: "2026-01-22",
-    featured: true
+    signatured: true
   },
   {
     _id: "9",
@@ -114,7 +114,7 @@ export const products = [
     color: ["Gold"],
     sizes: [],
     date: "2026-01-25",
-    featured: false
+    signatured: false
   },
   {
     _id: "10",
@@ -127,6 +127,6 @@ export const products = [
     color: ["White"],
     sizes: [],
     date: "2026-01-28",
-    featured: false
+    signatured: false
   }
 ];
