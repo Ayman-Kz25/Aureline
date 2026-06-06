@@ -1,6 +1,10 @@
+import Layout from "../components/Layout"
+
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <Layout>
+      
+    </Layout>
   )
 }
 export default Shop

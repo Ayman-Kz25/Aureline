@@ -7,6 +7,14 @@
   --text: #58606e;
 }
 
+.font-heading {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-subtitle {
+  font-family: "Manrope", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -252,48 +260,48 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.sig-item {
+.product-item {
   @apply flex-shrink-0 w-[200px] sm:w-[240px] md:w-[260px] relative flex flex-col bg-white rounded-lg border border-[rgba(0,0,0,0.05)] pb-3.5 scroll-smooth;
   scroll-snap-align: start;
 }
 
 
-.sig-item img {
+.product-item img {
   @apply w-full h-[180px] sm:h-[200px] md:h-[220px] lg:h-[320px] object-cover;
   border-radius: 10px 10px 0 0;
 }
 
-.sig-item h3 {
+.product-item h3 {
   font-family: "Cormorant Garamond", serif;
   @apply text-xl text-gray-950 font-semibold ml-2.5 px-3 py-2.5;
 }
 
-.sig-item p {
+.product-item p {
   font-family: "Manrope", sans-serif;
   @apply text-[16px] text-[var(--text)] font-medium ml-2.5 px-3;
 }
 
-.tag {
+.product-item .tag {
   @apply absolute bottom-32 right-2 md:bottom-24 md:right-3 text-xs rounded-full text-white tracking-wider px-2 md:px-2.5 py-1;
   font-family: "Manrope", sans-serif;
 }
 
-.tag.new {
+.product-item .tag.new {
   background: #9c6644;
 }
 
-.tag.limited {
+.product-item .tag.limited {
   background: #b39063;
 }
 
-.tag.best {
+.product-item .tag.best {
   background: #8c6f4f;
 }
 
-.tag.exclusive {
+.product-item .tag.exclusive {
   background: #5e4b3c;
 }
 
-.tag.handmade {
+.product-item .tag.handmade {
   background: #cd9777;
 }
