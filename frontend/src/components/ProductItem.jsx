@@ -12,7 +12,7 @@ const ProductItem = ({ id, image, tag, name, price }) => {
       />
       <span className="tag exclusive">{tag}</span>
       <h3>{name}</h3>
-      <p>{currency}{price}</p>
+      <p>{currency}{price}.00</p>
     </Link>
   );
 };

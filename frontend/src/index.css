@@ -17,6 +17,7 @@
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 img: div {
@@ -103,7 +104,7 @@ body {
 }
 
 .navbar-overlay {
-  @apply fixed inset-0 bg-black/30 opacity-0 pointer-events-none transition-all duration-300;
+  @apply fixed inset-0 bg-black/30 opacity-0 pointer-events-none transition-all duration-300 z-100;
   backdrop-filter: blur(6px);
 }
 
@@ -225,18 +226,7 @@ body {
 }
 
 .sig-content {
-  @apply flex flex-col items-center lg:items-start text-center lg:text-left gap-4 max-w-xl;
-}
-
-.sig-content h2 {
-  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--primary)];
-  font-family: "Cormorant Garamond", serif;
-}
-
-.sig-content p {
-  @apply text-sm sm:text-base lg:text-lg opacity-80 font-normal tracking-wide;
-  line-height: 1.5;
-  font-family: "Manrope", sans-serif;
+  @apply flex flex-col items-center lg:items-start text-center lg:text-left gap-4 max-w-xl lg:w-4xl;
 }
 
 .sig-content button {

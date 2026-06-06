@@ -1,6 +1,10 @@
+import Layout from "../components/Layout"
+
 const Collection = () => {
   return (
-    <div>Collection</div>
+    <Layout>
+      Collection
+    </Layout>
   )
 }
 export default Collection

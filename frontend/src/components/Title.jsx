@@ -1,6 +1,6 @@
 const Title = ({ title, subtitle, align }) => {
   return (
-    <div className={`flex flex-col gap-2 mb-3 items-start text-${align}`}>
+    <div className={`flex flex-col gap-2 mb-3`}>
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[var(--primary)] font-heading mb-1.5">
         {title}
       </h2>
