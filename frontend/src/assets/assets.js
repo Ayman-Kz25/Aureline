@@ -550,43 +550,67 @@ export const collection = [
 
 export const slide = [
   {
-    _id: 1,
+    _id: "1",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780497871/Aureline/pakistani_eid_suit_gr4o7g.jpg",
   },
   {
-    _id: 2,
+    _id: "2",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780497706/Aureline/Versatile_Gold_Earrings_for_All_Occasions_iv6bre.jpg",
   },
   {
-    _id: 3,
+    _id: "3",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498283/Aureline/European_Street_Style___Leather_shopper_leather___Lish%C3%A9_Europe_voukjn.jpg",
   },
   {
-    _id: 4,
+    _id: "4",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498472/Aureline/Delicate_accessories_crafted_for_enchanting_moments_%EF%B8%8F_Discover_your_new_jewellery_essentials_on_ASHKLONDON_COM____ashklondon_jewelry_jewellery_fashion_london_dubai_style_bracelet_nlejcr.jpg",
   },
   {
-    _id: 5,
+    _id: "5",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498465/Aureline/1_Brinco_1_Pulseira_1_Colar_Conjunto_de_J%C3%B3ias_Femininas_Fashion_e_Minimalista_em_Estilo_Europeu_e_Americano_Corrente_de_Ossos_de_Peixe_Geom%C3%A9trica_Dourada_Decora%C3%A7%C3%A3o_de_P%C3%A9rola_Adequado_para_uso_di%C3%A1rio_iry03x.jpg",
   },
   {
-    _id: 6,
+    _id: "6",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498282/Aureline/Everyday_Rectangular_Mini_Bag_quflsn.jpg",
   },
   {
-    _id: 7,
+    _id: "7",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780493862/Aureline/Elegant_Ethnic_Suit_qo1vgx.jpg",
   },
   {
-    _id: 8,
+    _id: "8",
     image:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498465/Aureline/1pc_Vintage_Style_Faux_Pearl_Pendant_Necklace_1pc_Bracelet_And_1pair_Earrings_Jewelry_Set_syhgwc.jpg",
   },
 ];
+
+export const letter = [
+  {
+    _id: "1",
+    username: "Ayesha Khan",
+    comment: "The craftsmanship feels personal. My jewelry arrived beautifully packaged and looked even better in person.",
+    loc: "Islamabad, Pakistan",
+    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498465/Aureline/1pc_Vintage_Style_Faux_Pearl_Pendant_Necklace_1pc_Bracelet_And_1pair_Earrings_Jewelry_Set_syhgwc.jpg"
+  },
+  {
+    _id: "2",
+    username: "Sara Ahmed",
+    comment: "I bought a silk scarf and it instantly upgraded my outfits. The quality feels genuinely premium.",
+    loc: "Lahore, Pakistan",
+    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780507957/Aureline/Luxury_Women_s_Silk_Satin_Scarf_-_Elegant_Soft_Lightweight_Shawl_for_Party_Casual_Winter_Fashion_uspz5e.jpg",
+  },
+  {
+    _id: "3",
+    username: "Hina Malik",
+    comment: "The handbag design is clean and elegant. It fits both casual and formal looks without effort.",
+    loc: "Karachi, Pakistan",
+    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780510606/Aureline/download_64_lnutsw.jpg",
+  }
+]

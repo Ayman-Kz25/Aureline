@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Story = () => {
   return (
     <div className="story">
-      <div class="story-content">
+      <div className="story-content">
         <h2>Our Story</h2>
         <p>At Auréline, every collection is selected with a focus on timeless
           style,
@@ -12,12 +12,12 @@ const Story = () => {
           creating
           pieces that remain beautiful long after trends fade.</p>
         <button>
-          <Link to="/about" class="btn">
+          <Link to="/about" className="btn">
             Learn more
           </Link>
         </button>
       </div>
-      <div class="story-img">
+      <div className="story-img">
         <img
           src="https://res.cloudinary.com/dhjf7rok5/image/upload/v1780484422/Aureline/Ivory_Gold_Eid_Anarkali___Elegant_Festive_Wear_Inspiration_h217wa.jpg"
           alt="" />

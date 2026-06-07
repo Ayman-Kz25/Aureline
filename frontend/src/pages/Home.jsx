@@ -4,6 +4,8 @@ import Features from "../components/Features";
 import Signature from "../components/Signature";
 import Atelier from "../components/Atelier";
 import Archive from "../components/Archive";
+import Story from "../components/Story";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Signature />
       <Atelier />
       <Archive />
+      <Story />
+      <Newsletter />
     </Layout>
   );
 };

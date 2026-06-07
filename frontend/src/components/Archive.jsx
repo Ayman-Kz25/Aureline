@@ -24,7 +24,7 @@ const Archive = () => {
 
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % total);
-    }, 7000);
+    }, 10000);
   }, [total]);
 
   return (
