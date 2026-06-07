@@ -6,6 +6,7 @@ import Atelier from "../components/Atelier";
 import Archive from "../components/Archive";
 import Story from "../components/Story";
 import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Archive />
       <Story />
       <Newsletter />
+      <Footer />
     </Layout>
   );
 };
