@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Signature from "../components/Signature";
 import Atelier from "../components/Atelier";
+import Archive from "../components/Archive";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Features />
       <Signature />
       <Atelier />
+      <Archive />
     </Layout>
   );
 };
