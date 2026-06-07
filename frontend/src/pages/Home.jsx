@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Signature from "../components/Signature";
+import Atelier from "../components/Atelier";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Features />
       <Signature />
+      <Atelier />
     </Layout>
   );
 };

@@ -201,7 +201,7 @@ body {
   @apply bg-[var(--bg)] flex flex-col md:flex-row justify-center items-center gap-10 md:gap-16 py-14 px-5;
 }
 
-.features-grid div{
+.features-grid div {
   @apply flex flex-col justify-center items-center gap-2.5;
 }
 
@@ -226,7 +226,7 @@ body {
 }
 
 .sig-content {
-  @apply flex flex-col items-center lg:items-start text-center lg:text-left gap-4 max-w-xl lg:w-4xl;
+  @apply flex flex-col items-center lg:items-start text-center lg:text-left gap-4 max-w-xl leading-1;
 }
 
 .sig-content button {
@@ -254,7 +254,6 @@ body {
   @apply flex-shrink-0 w-[200px] sm:w-[240px] md:w-[260px] relative flex flex-col bg-white rounded-lg border border-[rgba(0,0,0,0.05)] pb-3.5 scroll-smooth;
   scroll-snap-align: start;
 }
-
 
 .product-item img {
   @apply w-full h-[180px] sm:h-[200px] md:h-[220px] lg:h-[320px] object-cover;
@@ -294,4 +293,77 @@ body {
 
 .product-item .tag.handmade {
   background: #cd9777;
+}
+
+/* CATALOG */
+.catalog {
+  @apply flex flex-col items-center text-center px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-[var(--bg)] py-5 md:py-7 lg:py-9 pt-3;
+}
+
+.cat-content {
+  @apply flex flex-col items-center text-center lg:text-left gap-4 max-w-xl lg:w-4xl py-2 lg:py-4;
+}
+
+.cat-content h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-[var(--primary)] mb-1.5;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.cat-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-8;
+}
+
+.cat-item {
+  @apply flex flex-col gap-2 w-96 pb-4 mt-5;
+}
+
+.cat-img {
+  @apply relative overflow-hidden rounded-xl;
+}
+
+.cat-img img {
+  @apply w-full h-[400px] object-cover block transition-transform duration-300 ease-in-out;
+  border-radius: 10px 10px 0 0;
+}
+
+.cat-img::after {
+  content: "";
+  @apply absolute inset-0 bg-[rgba(0,0,0,0.25)] opacity-0 transition-opacity duration-300 ease-in-out;
+}
+
+.cat-img p {
+  @apply absolute left-[50%] bottom-[20%] opacity-0 text-white text-lg bg-[rgba(179,144,99,0.85)] py-1.5 px-3 rounded-xl transition-all duration-300 ease-in-out text-center;
+  transform: translate(-50%, 20%);
+  font-family: "Cormorant Garamond", serif;
+}
+
+.cat-item:hover .cat-img img {
+  transform: scale(1.05);
+}
+
+.cat-item:hover .cat-img::after {
+  opacity: 1;
+}
+
+.cat-item:hover .cat-img p {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.cat-item:nth-child(2),
+.cat-item:nth-child(5) {
+  transform: translateY(-24px);
+}
+
+.catalog button {
+  @apply flex justify-start mt-3.5 transition-colors duration-300;
+}
+
+.catalog button .btn {
+  @apply bg-transparent border border-[var(--primary)] px-6 py-4 md:px-9 md:py-3 rounded-full cursor-pointer w-fit text-[var(--primary)] text-sm md:text-lg text-center md:text-left transition-colors duration-300;
+  font-family: "Manrope", sans-serif;
+}
+
+.catalog button .btn:hover {
+  @apply border-transparent bg-[var(--primary)] text-white;
 }

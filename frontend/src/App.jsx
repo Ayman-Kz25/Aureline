@@ -10,6 +10,7 @@ import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
+import Catalog from './components/Catalog';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/shop" element={<Shop/>} />
         <Route path="/collection" element={<Collection/>} />
+        <Route path="/collection/:colId" element={<Catalog />} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product/:productId" element={<Product/>} />
