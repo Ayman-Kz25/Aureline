@@ -651,16 +651,16 @@ footer {
 
 /* Shop - filter-grid */
 .filter-grid {
-  @apply flex flex-col lg:flex-row justify-center items-center lg:justify-around bg-[var(--bg)] pb-3 pt-5;
+  @apply flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 lg:gap-8 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-[var(--bg)] pb-3 pt-5 ;
 }
 
 /* Shop - Tab-bar */
 .tab-bar {
-  @apply flex flex-wrap justify-center items-center gap-3 overflow-x-auto md:gap-4 py-4 scrollbar-none line-clamp-1;
+  @apply flex flex-nowrap lg:flex-wrap justify-start items-center gap-2 md:gap-3 lg:gap-4 py-4 overflow-x-auto scrollbar-none w-full;
 }
 
 .tab {
-  @apply px-7 py-2.5 rounded-full border border-transparent text-[var(--primary)] text-sm md:text-base cursor-pointer transition-all duration-300 font-[Manrope];
+  @apply shrink-0 px-4 py-1.5 lg:px-6 lg:py-2 rounded-full border border-transparent text-[var(--primary)] text-sm md:text-base cursor-pointer transition-all duration-300 font-[Manrope];
 }
 
 .tab:hover {
@@ -673,9 +673,8 @@ footer {
 }
 
 /* Shop - Filters */
-/* FILTERS */
 .filters {
-  @apply px-5 py-3 border-b border-[var(--primary)]
+  @apply min-w-[180px] px-5 py-3 border-b border-[var(--primary)]
   bg-[var(--bg)] text-[var(--text)]
   outline-none cursor-pointer
   text-sm md:text-base

@@ -2,8 +2,7 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import { Search } from "react-bootstrap-icons";
 
-const Searchbar = () => {
-    const [search, setSearch] = useState("");
+const Searchbar = ({search, setSearch}) => {
 
   return (
     <div className="search-bar">

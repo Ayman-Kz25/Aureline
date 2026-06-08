@@ -1,4 +1,4 @@
-import { useContext, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import Layout from "../components/Layout";
 import ShopContainer from "../components/ShopContainer";
 import TabBar from "../components/TabBar";
@@ -12,13 +12,21 @@ const Shop = () => {
   const { products } = useContext(ShopContext);
   const [activeTab, setActiveTab] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
+  const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("");
   const itemPerPage = 6;
 
-  const filteredProducts =
-    activeTab === "All"
-      ? products
-      : products.filter((product) => product.category === activeTab);
+  let filteredProducts = products.filter((product) => {
+
+    const categoryMatch = activeTab === "All"
+    || product.category === activeTab;
+
+    const searchMatch = product.name.toLowerCase().includes(search.toLowerCase());
+
+    return categoryMatch && searchMatch;
+  });
+
+  filteredProducts = [...filteredProducts];
 
   if(sortBy === "price-low"){
     filteredProducts.sort((a, b) => a.price - b.price)
@@ -47,10 +55,13 @@ const Shop = () => {
     return filteredProducts.slice(start, end);
   }, [filteredProducts, currentPage]);
 
+  useEffect(()=>{
+    setCurrentPage(1);
+  }, [activeTab, sortBy, search]);
 
   return (
     <Layout bg={`bg-[var(--secondary)]`}>
-      <ShopContainer />
+      <ShopContainer search={search} setSearch={setSearch} />
       <div className="filter-grid">
         <TabBar active={activeTab} setActive={setActiveTab} />
         <Filters sortBy={sortBy} setSortBy={setSortBy} />
