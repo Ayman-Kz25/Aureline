@@ -15,6 +15,7 @@ export const products = [
     date: "2026-01-10",
     signatured: true,
     collection: "gold-accents",
+    category: "Jewelry",
   },
   {
     _id: "2",
@@ -23,7 +24,7 @@ export const products = [
       "Soft silk evening dress with a flowing silhouette, perfect for luxury events.",
     price: 410,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780325600/Aureline/check_link_wumen_fashion_new_trend_kfeya1.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780497871/Aureline/pakistani_eid_suit_gr4o7g.jpg",
     ],
     code: "ISD-002",
     tag: "Best Seller",
@@ -32,6 +33,7 @@ export const products = [
     date: "2026-01-12",
     signatured: false,
     collection: "evening-elegance",
+    category: "Dress",
   },
   {
     _id: "3",
@@ -49,6 +51,7 @@ export const products = [
     date: "2026-01-08",
     signatured: true,
     collection: "modern-classics",
+    category: "Bag",
   },
   {
     _id: "4",
@@ -66,6 +69,7 @@ export const products = [
     date: "2026-01-05",
     signatured: true,
     collection: "timeless-essentials",
+    category: "Scarf",
   },
   {
     _id: "5",
@@ -83,6 +87,7 @@ export const products = [
     date: "2026-01-15",
     signatured: false,
     collection: "evening-elegance",
+    category: "Dress",
   },
   {
     _id: "6",
@@ -100,6 +105,7 @@ export const products = [
     date: "2026-01-18",
     signatured: false,
     collection: "modern-classics",
+    category: "Bag",
   },
   {
     _id: "7",
@@ -117,6 +123,7 @@ export const products = [
     date: "2026-01-20",
     signatured: false,
     collection: "gold-accents",
+    category: "Jewelry",
   },
   {
     _id: "8",
@@ -134,6 +141,7 @@ export const products = [
     date: "2026-01-22",
     signatured: false,
     collection: "limited-editions",
+    category: "Dress",
   },
   {
     _id: "9",
@@ -151,6 +159,7 @@ export const products = [
     date: "2026-01-25",
     signatured: false,
     collection: "gold-accents",
+    category: "Jewelry",
   },
   {
     _id: "10",
@@ -168,6 +177,7 @@ export const products = [
     date: "2026-01-28",
     signatured: false,
     collection: "timeless-essentials",
+    category: "Jewelry",
   },
   {
     _id: "11",
@@ -185,6 +195,7 @@ export const products = [
     date: "2026-02-01",
     signatured: false,
     collection: "bridal-celebration",
+    category: "Jewelry",
   },
   {
     _id: "12",
@@ -202,6 +213,7 @@ export const products = [
     date: "2026-02-03",
     signatured: false,
     collection: "limited-editions",
+    category: "Bag",
   },
   {
     _id: "13",
@@ -219,6 +231,7 @@ export const products = [
     date: "2026-02-05",
     signatured: true,
     collection: "golden-accents",
+    category: "Jewelry",
   },
   {
     _id: "14",
@@ -240,6 +253,7 @@ export const products = [
     date: "2026-02-08",
     signatured: false,
     collection: "evening-elegance",
+    category: "Dress",
   },
   {
     _id: "15",
@@ -257,6 +271,7 @@ export const products = [
     date: "2026-02-10",
     signatured: true,
     collection: "modern-classics",
+    category: "Jewelry",
   },
   {
     _id: "16",
@@ -276,6 +291,7 @@ export const products = [
     date: "2026-02-12",
     signatured: false,
     collection: "timeless-essentials",
+    category: "Bag",
   },
   {
     _id: "17",
@@ -294,6 +310,7 @@ export const products = [
     date: "2026-02-14",
     signatured: false,
     collection: "evening-elegance",
+    category: "Heels",
   },
   {
     _id: "18",
@@ -311,6 +328,7 @@ export const products = [
     date: "2026-02-16",
     signatured: false,
     collection: "bridal-celebration",
+    category: "Accessories",
   },
   {
     _id: "19",
@@ -328,6 +346,7 @@ export const products = [
     date: "2026-02-18",
     signatured: true,
     collection: "golden-accents",
+    category: "Jewelry",
   },
   {
     _id: "20",
@@ -345,6 +364,7 @@ export const products = [
     date: "2026-02-20",
     signatured: false,
     collection: "timeless-essentials",
+    category: "Scarf",
   },
   {
     _id: "21",
@@ -363,6 +383,7 @@ export const products = [
     date: "2026-02-22",
     signatured: true,
     collection: "modern-classics",
+    category: "Jewelry",
   },
   {
     _id: "22",
@@ -380,6 +401,7 @@ export const products = [
     date: "2026-02-24",
     signatured: true,
     collection: "evening-elegance",
+    category: "Dress",
   },
   {
     _id: "23",
@@ -397,6 +419,7 @@ export const products = [
     date: "2026-02-26",
     signatured: false,
     collection: "timeless-essentials",
+    category: "Bag",
   },
   {
     _id: "24",
@@ -414,6 +437,7 @@ export const products = [
     date: "2026-02-28",
     signatured: false,
     collection: "bridal-celebration",
+    category: "Jewelry",
   },
   {
     _id: "25",
@@ -431,6 +455,7 @@ export const products = [
     date: "2026-03-01",
     signatured: false,
     collection: "golden-accents",
+    category: "Jewelry",
   },
   {
     _id: "26",
@@ -448,6 +473,7 @@ export const products = [
     date: "2026-02-01",
     signatured: false,
     collection: "bridal-celebration",
+    category: "Jewelry",
   },
   {
     _id: "27",
@@ -465,6 +491,7 @@ export const products = [
     date: "2026-03-01",
     signatured: false,
     collection: "evening-elegance",
+    category: "Dress",
   },
   {
     _id: "28",
@@ -482,6 +509,7 @@ export const products = [
     date: "2026-03-03",
     signatured: false,
     collection: "bridal-celebration",
+    category: "Dress",
   },
 ];
 

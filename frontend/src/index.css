@@ -557,11 +557,11 @@ background-size: cover;
 
 /* Home - Footer */
 footer {
-  @apply bg-[var(--secondary)] px-4 sm:px-10 md:px-16 lg:px-36 py-6 md:pt-20 font-[Elsie_Swash_Caps];
+  @apply bg-[var(--secondary)] px-6 sm:px-12 md:px-24 lg:px-36 py-6 md:pt-20 font-[Elsie_Swash_Caps];
 }
 
 .ft-content {
-  @apply flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-20 pb-12;
+  @apply flex flex-col lg:flex-row lg:justify-between lg:items-start justify-center items-center gap-10 lg:gap-20 pb-12;
 }
 
 .ft-content .logo a {
@@ -577,7 +577,7 @@ footer {
 }
 
 .subscribe {
-  @apply max-w-sm;
+  @apply max-w-sm text-center md:text-left;
 }
 
 .subscribe h4 {
@@ -589,11 +589,11 @@ footer {
 }
 
 .input {
-  @apply flex items-center gap-3;
+  @apply flex items-center gap-1.5 md:gap-3;
 }
 
 .input input {
-  @apply flex-1 px-4 py-3 border border-black/30 rounded-full outline-none font-[Manrope];
+  @apply flex-1 px-2 py-2 md:px-4 md:py-3 border border-black/30 rounded-full outline-none font-[Manrope];
 }
 
 .input input:focus {
@@ -601,7 +601,7 @@ footer {
 }
 
 .input button {
-  @apply px-6 py-3 rounded-full border border-transparent bg-[var(--primary)] text-white font-[Manrope] transition hover:bg-transparent hover:border-[var(--primary)] hover:text-[var(--primary)];
+  @apply px-2 py-2 md:px-6 md:py-3 rounded-full border border-transparent bg-[var(--primary)] text-white font-[Manrope] transition hover:bg-transparent hover:border-[var(--primary)] hover:text-[var(--primary)];
 }
 
 .ft-links {
@@ -634,7 +634,7 @@ footer {
 }
 
 .search-bar {
-  @apply w-full md:w-[48rem] flex flex-col lg:flex-row items-center py-2.5 border border-[var(--primary)] rounded-full md:mb-20;
+  @apply w-full sm:w-[24rem] md:w-[32rem] lg:w-[48rem] flex items-center py-2.5 border border-[var(--primary)] rounded-full md:mb-20;
 }
 
 .search-bar .icon {
@@ -647,4 +647,54 @@ footer {
 
 .close-icon {
   @apply cursor-pointer text-[var(--primary)] mr-4;
+}
+
+/* Shop - filter-grid */
+.filter-grid {
+  @apply flex justify-around bg-[var(--bg)] py-3;
+}
+
+/* Shop - Tab-bar */
+.tab-bar {
+  @apply flex flex-wrap justify-center items-center gap-3 overflow-x-auto md:gap-4 py-4 scrollbar-none line-clamp-1;
+}
+
+.tab {
+  @apply px-5 py-2.5 rounded-full border border-[var(--primary)] text-[var(--primary)] text-sm md:text-base cursor-pointer transition-all duration-300 font-[Manrope];
+}
+
+.tab:hover,
+.tab.active,
+.tab:focus {
+  @apply bg-[var(--primary)] text-white;
+}
+
+/* Shop - Filters */
+
+
+/* Shop - Products-grid */
+.products-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-16 md:py-12 lg:py-9 bg-[var(--bg)];
+}
+
+/* Shop - Product-Card */
+/* PRODUCT CARD */
+.product-card {
+  @apply flex flex-col gap-2 bg-[var(--bg)] rounded-xl overflow-hidden transition-all duration-300 cursor-pointer shadow-sm;
+}
+
+.product-card img {
+  @apply w-full h-[320px] object-cover transition-transform duration-300;
+}
+
+.product-card h3 {
+  @apply text-lg md:text-xl font-semibold text-gray-950 px-2 pt-1 font-[Cormorant_Garamond] lg:ml-2.5;
+}
+
+.product-card p {
+  @apply text-sm md:text-base text-[var(--text)] px-2 pb-3 lg:ml-2.5 font-[Manrope];
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
 }

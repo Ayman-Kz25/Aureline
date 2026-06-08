@@ -18,7 +18,6 @@ const Home = () => {
       <Archive />
       <Story />
       <Newsletter />
-      <Footer />
     </Layout>
   );
 };
