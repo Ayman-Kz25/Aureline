@@ -142,8 +142,11 @@ body {
 
 /* Home - Hero */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24 z-0;
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24;
   background-image: url('https://res.cloudinary.com/dhjf7rok5/image/upload/v1780909675/Aureline/visily-image-9_ytqbd0.png');
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -617,8 +620,31 @@ footer {
   @apply -translate-y-0.5 scale-105;
 }
 
-/* Shop -  */
-.shop {
-  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24 z-0;
+/* Shop - Container */
+.shop-container {
+  @apply flex flex-col items-center justify-center w-full px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-9 md:py-3;
   background-image: url('https://res.cloudinary.com/dhjf7rok5/image/upload/v1780909675/Aureline/visily-image-9_ytqbd0.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shop-container h1 {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-medium text-[var(--primary)] my-5 lg:my-7 font-[Cormorant_Garamond] text-center;
+}
+
+.search-bar {
+  @apply w-full md:w-[48rem] flex flex-col lg:flex-row items-center py-2.5 border border-[var(--primary)] rounded-full md:mb-20;
+}
+
+.search-bar .icon {
+  @apply text-[var(--text)] opacity-70 mx-7;
+}
+
+.search-bar .search-input {
+  @apply border-0 outline-0 bg-transparent text-[var(--text)] placeholder:text-[var(--text)] placeholder:opacity-70 w-[87%];
+}
+
+.close-icon {
+  @apply cursor-pointer text-[var(--primary)] mr-4;
 }
