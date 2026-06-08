@@ -1,9 +1,10 @@
+import CollectionContainer from "../components/CollectionContainer"
 import Layout from "../components/Layout"
 
 const Collection = () => {
   return (
-    <Layout>
-      Collection
+    <Layout bg="bg-[var(--secondary)]">
+      <CollectionContainer />
     </Layout>
   )
 }
