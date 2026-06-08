@@ -1,4 +1,5 @@
 import { CirclePlay } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,9 +14,9 @@ const Hero = () => {
           Perfectly
         </p>
         <button>
-          <a href="/shop.html" className="hero-btn">
+          <Link to="/shop" className="hero-btn">
             Shop now
-          </a>
+          </Link>
         </button>
       </div>
       {/* Hero Right */}

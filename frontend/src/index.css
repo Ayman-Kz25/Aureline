@@ -140,9 +140,10 @@ body {
   @apply text-[var(--primary)];
 }
 
-/* Home - HERO */
+/* Home - Hero */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24;
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24 z-0;
+  background-image: url('https://res.cloudinary.com/dhjf7rok5/image/upload/v1780909675/Aureline/visily-image-9_ytqbd0.png');
 }
 
 .hero-content {
@@ -190,7 +191,7 @@ body {
   @apply absolute top-[228px] right-1 md:top-[255px] md:right-4 lg:top-[276px] lg:left-[374px] text-white text-4xl z-10 opacity-70 cursor-pointer transition-transform duration-500 hover:scale-105 hover:opacity-100;
 }
 
-/* FEATURES */
+/* Home - Features */
 .features-grid {
   @apply bg-[var(--bg)] flex flex-col md:flex-row justify-center items-center gap-10 md:gap-16 py-14 px-5;
 }
@@ -212,7 +213,7 @@ body {
   color: var(--primary);
 }
 
-/* SIGNATURE PIECES */
+/* Home - Signature Pieces */
 .signature {
   @apply flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20  bg-[var(--bg)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-5 md:py-7 overflow-x-hidden;
 }
@@ -283,7 +284,7 @@ body {
   background: #cd9777;
 }
 
-/* CATALOG */
+/* Home - Catalog */
 .catalog {
   @apply flex flex-col items-center text-center px-4 sm:px-6 md:px-10 lg:px-16 bg-[var(--bg)] py-5 md:py-7 lg:py-10 pt-3;
 }
@@ -354,7 +355,7 @@ body {
   }
 }
 
-/* FASHION ARCHIVE */
+/* Home - Fashion Archive */
 .archive {
   @apply flex flex-col-reverse lg:flex-row justify-around items-center gap-10 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-16 md:py-12 lg:py-9 bg-[#FAFAFA];
 }
@@ -441,7 +442,7 @@ body {
   @apply border-transparent bg-[var(--primary)] text-white;
 }
 
-/* STORY */
+/* Home - Story */
 .story {
   @apply flex flex-col md:flex-row justify-between items-center gap-20 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-16 md:py-12 lg:py-9 bg-[#FAFAFA];
 }
@@ -478,7 +479,7 @@ body {
   @apply w-[250px] max-w-[500px] md:w-full lg:h-[600px] object-cover rounded-xl;
 }
 
-/* NEWS LETTER */
+/* Home - Newsletter */
 .news-letter {
   @apply relative flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-16 md:py-12 lg:py-9 bg-[var(--secondary)];
 }
@@ -551,7 +552,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Footer */
+/* Home - Footer */
 footer {
   @apply bg-[var(--secondary)] px-4 sm:px-10 md:px-16 lg:px-36 py-6 md:pt-20 font-[Elsie_Swash_Caps];
 }
@@ -614,4 +615,10 @@ footer {
 
 .social .icon:hover {
   @apply -translate-y-0.5 scale-105;
+}
+
+/* Shop -  */
+.shop {
+  @apply flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full min-h-screen lg:min-h-[87vh] bg-[var(--secondary)] px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-12 lg:py-5 gap-12 lg:gap-24 z-0;
+  background-image: url('https://res.cloudinary.com/dhjf7rok5/image/upload/v1780909675/Aureline/visily-image-9_ytqbd0.png');
 }
