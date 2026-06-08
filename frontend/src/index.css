@@ -674,11 +674,10 @@ footer {
 
 /* Shop - Products-grid */
 .products-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-16 md:py-12 lg:py-9 bg-[var(--bg)];
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-16 md:py-12 lg:py-9 bg-[var(--bg)];
 }
 
 /* Shop - Product-Card */
-/* PRODUCT CARD */
 .product-card {
   @apply flex flex-col gap-2 bg-[var(--bg)] rounded-xl overflow-hidden transition-all duration-300 cursor-pointer shadow-sm;
 }
@@ -697,4 +696,41 @@ footer {
 
 .product-card:hover img {
   transform: scale(1.05);
+}
+
+/* Shop - Pagination */
+.pagination {
+  @apply flex items-center justify-center gap-1 md:gap-3 pt-10 bg-[var(--bg)];
+}
+
+.pagination button {
+  @apply w-9 h-9 rounded-full border-transparent text-[var(--primary)] text-sm transition cursor-pointer border;
+}
+
+.pagination button:hover {
+  @apply bg-[var(--primary)] text-white;
+}
+
+.pagination .icon {
+  @apply text-[var(--primary)] cursor-pointer transition-transform duration-300;
+}
+
+.pagination span:hover .icon.left{
+  @apply -translate-x-1;
+}
+
+.pagination span:hover .icon.right{
+  @apply translate-x-1;
+}
+
+.pagination button.active {
+  @apply border-[var(--primary)] text-[var(--primary)];
+}
+
+.pagination button.active:hover {
+  @apply bg-[var(--primary)] text-white;
+}
+
+.dots {
+  @apply px-2 text-[var(--primary)] cursor-pointer;
 }
