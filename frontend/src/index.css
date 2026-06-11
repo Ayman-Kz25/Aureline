@@ -34,8 +34,7 @@ body {
 }
 
 .logo .brand-name {
-  font-family: "Elsie Swash Caps", serif;
-  @apply text-[var(--primary)] text-3xl;
+  @apply text-[var(--primary)] text-3xl font-[Elsie_Swash_Caps];
 }
 
 .nav-list {
@@ -904,9 +903,7 @@ footer {
 
 /* Collection - Catalog Modal */
 .catalog-modal {
-  @apply fixed inset-0 flex justify-center items-center z-50;
-
-  background: rgba(0, 0, 0, 0.7);
+  @apply fixed inset-0 flex justify-center items-center z-50 bg-black/60;
 
   backdrop-filter: blur(8px);
 
@@ -964,37 +961,85 @@ footer {
   position: absolute;
   inset: 0;
 
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at center,
     transparent 70%,
     rgba(0, 0, 0, 0.04)
-  );
+  ); */
 
   pointer-events: none;
 }
 
 .book-page {
   @apply relative flex flex-col justify-start items-center
-  w-1/2 p-8 overflow-y-auto;
-  background: linear-gradient(to right, #fdfbf7, #f8f3eb);
+  w-1/2 bg-[var(--bg)];
   animation: pageFade 0.5s ease;
 }
 
+.catalog-collection {
+  @apply uppercase tracking-[3px]
+  text-xs text-[var(--primary)];
+  font-family: "Manrope", sans-serif;
+}
+
 .left-page {
+  @apply p-8;
   border-right: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.book-page img {
-  @apply w-full h-[350px] object-cover rounded-lg;
+.left-page img {
+  @apply w-full h-full object-cover flex items-center;
 }
 
-.book-page h2 {
-  @apply mt-6 text-3xl text-[var(--primary)] font-[Cormorant_Garamond];
+.right-page {
+  @apply p-8 items-start text-left;
 }
 
-.book-page p {
-  @apply mt-3 text-center leading-7;
+.page-content {
+  @apply overflow-y-auto;
+}
 
+.page-content .catalog-collection {
+  @apply uppercase tracking-[4px] text-xs;
+  color: rgba(0,0,0,0.5);
+}
+
+.page-content h2 {
+  @apply text-xl md:text-3xl lg:text-4xl leading-9 mt-10 mb-4 font-[Cormorant_Garamond] tracking-wider lg:tracking-wide;
+  font-family: "", serif;
+  color: var(--primary);
+}
+
+.page-content h3 {
+  @apply text-xl md:text-2xl lg:text-3xl my-3 font-medium font-[Cormorant_Garamond] text-[var(--primary)];
+}
+
+.page-content p {
+  @apply text-sm lg:text-base leading-10 max-w-[500px] font-[Manrope];
+  color: rgba(0,0,0,0.75);
+}
+
+.catalog-details {
+  border-top: 1px solid rgba(0,0,0,.08);
+  @apply mt-auto w-full pt-6 flex flex-col gap-4;
+}
+
+.catalog-details div {
+  @apply mb-2 flex flex-col gap-1;
+}
+
+.catalog-details strong {
+  @apply block text-xs uppercase tracking-[3px] mb-2 font-[Manrope];
+  color: rgba(0,0,0,.45);
+}
+
+.catalog-details span {
+  @apply text-base lg:text-lg font-[Manrope];
+  color: var(--primary);
+}
+
+.page-counter {
+  @apply text-sm lg:text-base text-[var(--primary)] flex items-center;
   font-family: "Manrope", sans-serif;
 }
 
@@ -1007,13 +1052,20 @@ footer {
   border border-[var(--primary)] bg-white
   flex items-center justify-center
   cursor-pointer
-  transition-all duration-300;
+  transition-colors duration-300;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .book-controls button:hover {
-  @apply bg-[var(--primary)] text-white;
-  transform: translateY(-2px);
+@apply bg-[var(--primary)] text-white;
+}
+
+.book-controls button:hover .icon {
+  @apply text-white;
+}
+
+.book-controls button .icon {
+  @apply text-[var(--primary)] hover:text-white bg-none;
 }
 
 @keyframes pageFade {

@@ -36,58 +36,50 @@ const CatalogBook = ({ catalog }) => {
       <div className="book-pages">
         {/* LEFT PAGE */}
         <div className="book-page left-page">
-          <img
-            src={currentProduct.image[0]}
-            alt={currentProduct.name}
-          />
+          <img src={currentProduct.image[0]} alt={currentProduct.name} />
         </div>
 
         {/* RIGHT PAGE */}
         <div className="book-page right-page">
-          <span className="catalog-collection">
-            {catalog.title}
-          </span>
+          <div className="page-content">
+            <span className="catalog-collection">{catalog.title}</span>
 
-          <h2>{currentProduct.name}</h2>
+            <h2>{currentProduct.name}</h2>
 
-          <h3>
-            {currency}
-            {currentProduct.price}
-          </h3>
-
-          <p>{currentProduct.description}</p>
-
-          <div className="catalog-details">
-            <div>
-              <strong>Colors</strong>
-              <span>
-                {currentProduct.color.join(", ")}
+            <h3>
+              {currency}
+              <span className="font-[Manrope] text-lg pl-1">
+                {currentProduct.price}
               </span>
-            </div>
+            </h3>
 
-            {currentProduct.sizes.length > 0 && (
+            <p>{currentProduct.description}</p>
+
+            <div className="catalog-details">
               <div>
-                <strong>Sizes</strong>
-                <span>
-                  {currentProduct.sizes.join(", ")}
-                </span>
+                <strong>Colors</strong>
+                <span>{currentProduct.color.join(", ")}</span>
               </div>
-            )}
 
-            <div>
-              <strong>Collection</strong>
-              <span>{catalog.title}</span>
+              {currentProduct.sizes.length > 0 && (
+                <div>
+                  <strong>Sizes</strong>
+                  <span>{currentProduct.sizes.join(", ")}</span>
+                </div>
+              )}
+
+              <div>
+                <strong>Collection</strong>
+                <span>{catalog.title}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="book-controls">
-        <button
-          onClick={prevPage}
-          disabled={pageIndex === 0}
-        >
-          <ChevronLeft />
+        <button onClick={prevPage} disabled={pageIndex === 0}>
+          <ChevronLeft size={18} className="icon" />
         </button>
 
         <span className="page-counter">
@@ -96,11 +88,9 @@ const CatalogBook = ({ catalog }) => {
 
         <button
           onClick={nextPage}
-          disabled={
-            pageIndex === catalogProducts.length - 1
-          }
+          disabled={pageIndex === catalogProducts.length - 1}
         >
-          <ChevronRight />
+          <ChevronRight size={18} className="icon" />
         </button>
       </div>
     </div>
