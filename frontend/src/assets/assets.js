@@ -623,22 +623,130 @@ export const letter = [
   {
     _id: "1",
     username: "Ayesha Khan",
-    comment: "The craftsmanship feels personal. My jewelry arrived beautifully packaged and looked even better in person.",
+    comment:
+      "The craftsmanship feels personal. My jewelry arrived beautifully packaged and looked even better in person.",
     loc: "Islamabad, Pakistan",
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498465/Aureline/1pc_Vintage_Style_Faux_Pearl_Pendant_Necklace_1pc_Bracelet_And_1pair_Earrings_Jewelry_Set_syhgwc.jpg"
+    image:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780498465/Aureline/1pc_Vintage_Style_Faux_Pearl_Pendant_Necklace_1pc_Bracelet_And_1pair_Earrings_Jewelry_Set_syhgwc.jpg",
   },
   {
     _id: "2",
     username: "Sara Ahmed",
-    comment: "I bought a silk scarf and it instantly upgraded my outfits. The quality feels genuinely premium.",
+    comment:
+      "I bought a silk scarf and it instantly upgraded my outfits. The quality feels genuinely premium.",
     loc: "Lahore, Pakistan",
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780507957/Aureline/Luxury_Women_s_Silk_Satin_Scarf_-_Elegant_Soft_Lightweight_Shawl_for_Party_Casual_Winter_Fashion_uspz5e.jpg",
+    image:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780507957/Aureline/Luxury_Women_s_Silk_Satin_Scarf_-_Elegant_Soft_Lightweight_Shawl_for_Party_Casual_Winter_Fashion_uspz5e.jpg",
   },
   {
     _id: "3",
     username: "Hina Malik",
-    comment: "The handbag design is clean and elegant. It fits both casual and formal looks without effort.",
+    comment:
+      "The handbag design is clean and elegant. It fits both casual and formal looks without effort.",
     loc: "Karachi, Pakistan",
-    image: "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780510606/Aureline/download_64_lnutsw.jpg",
-  }
-]
+    image:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780510606/Aureline/download_64_lnutsw.jpg",
+  },
+];
+
+export const catalog = [
+  {
+    _id: "1",
+    title: "Evening Elegance",
+    slug: "evening-elegance",
+    coverImage:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780484422/Aureline/Ivory_Gold_Eid_Anarkali___Elegant_Festive_Wear_Inspiration_h217wa.jpg",
+    description: "Sophisticated evening wear and statement pieces.",
+    
+    products: [
+      "2", // Ivory Silk Evening Dress
+      "5", // Ivory Silk Suit Set
+      "14", // Luxury Silk Abaya
+      "17", // Velvet Evening Heels
+      "22", // Satin Evening Gown
+      "27", // Midnight Evening Gown
+    ],
+  },
+
+  {
+    _id: "2",
+    title: "Golden Accents",
+    slug: "golden-accents",
+    coverImage:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780484273/Aureline/Soft_Gold_Jewelry_Aesthetic_for_the_Ultimate_Rich_Girl_Look_zf87tp.jpg",
+    description: "Luxury jewelry crafted with timeless golden details.",
+
+    products: [
+      "1", // Golden Grace Necklace Set
+      "7", // Gold Butterfly Bracelet
+      "9", // Luxury Gold Bracelet Set
+      "19", // Gold Chain Layered Set
+      "25", // Luxury Gold Cuff Bracelet
+    ],
+  },
+
+  {
+    _id: "3",
+    title: "Modern Classics",
+    slug: "modern-classics",
+    coverImage:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780484671/Aureline/Luxury_Gold_Jewellery_Aesthetic_Luxury_Gold_Jewellery_Aesthetic_dhihzo.jpg",
+    description: "Contemporary pieces inspired by classic design.",
+
+    products: [
+      "3", // Leather Top Handle Bag
+      "6", // Soft Beige Handbag
+      "15", // Diamond Charm Bracelet
+      "21", // Emerald Statement Ring
+    ],
+  },
+
+  {
+    _id: "4",
+    title: "Bridal & Celebration",
+    slug: "bridal-celebration",
+    coverImage:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780488157/Aureline/Shining_Diva_Fashion_Latest_Choker_Design_Antique_Kundan_Traditional_Necklace_Jewellery_Set_wi79ix.jpg",
+    description: "Wedding and celebration pieces for special moments.",
+
+    products: [
+      "11", // Crystal Pearl Choker
+      "18", // Pearl Luxe Hair Clip
+      "24", // Bridal Crystal Earrings
+      "26", // Pear-Cut Diamond Vine Set
+      "28", // Ivory Gold Festive Anarkali
+    ],
+  },
+
+  {
+    _id: "5",
+    title: "Limited Editions",
+    slug: "limited-editions",
+    coverImage:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780488999/Aureline/Luxury_Handbag_for_Women___Elegant_Fashion_Bag_Style_2026_mytfsi.jpg",
+    description: "Exclusive pieces available for a limited time.",
+
+    products: [
+      "8", // Pink Evening Gown
+      "12", // Champagne Satin Clutch
+      "27", // Midnight Evening Gown
+    ],
+  },
+
+  {
+    _id: "6",
+    title: "Timeless Essentials",
+    slug: "timeless-essentials",
+    coverImage:
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780484672/Aureline/download_56_eijmux.jpg",
+    description: "Everyday luxury staples designed to last.",
+
+    products: [
+      "4", // Elegant Silk Scarf
+      "10", // Minimal Pearl Drop Earrings
+      "16", // Structured Leather Tote
+      "20", // Cashmere Wrap Scarf
+      "23", // Signature Leather Crossbody
+    ],
+  },
+];
