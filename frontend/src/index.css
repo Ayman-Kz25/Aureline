@@ -911,12 +911,20 @@ footer {
 }
 
 .catalog-modal-content {
-  @apply relative bg-white rounded-2xl overflow-hidden;
+  @apply relative bg-white overflow-hidden;
 
   width: min(1200px, 95vw);
   height: min(800px, 90vh);
 
-  animation: bookOpen 0.5s ease;
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .catalog-modal-content {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
 }
 
 .catalog-close {
@@ -952,7 +960,7 @@ footer {
 }
 
 .book-pages {
-  @apply flex flex-1 overflow-hidden;
+  @apply flex flex-1 flex-col md:flex-row overflow-hidden;
 }
 
 .book-page::before {
@@ -971,8 +979,8 @@ footer {
 }
 
 .book-page {
-  @apply relative flex flex-col justify-start items-center
-  w-1/2 bg-[var(--bg)];
+  @apply relative flex flex-col justify-start items-center w-full
+  md:w-1/2 bg-[var(--bg)] overflow-y-auto p-5 md:p-8;
   animation: pageFade 0.5s ease;
 }
 
@@ -983,12 +991,18 @@ footer {
 }
 
 .left-page {
-  @apply p-8;
-  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+  .left-page {
+    border-bottom: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
 }
 
 .left-page img {
-  @apply w-full h-full object-cover flex items-center;
+  @apply w-full rounded-xl object-cover max-h-[70vh] md:max-h-full;
 }
 
 .right-page {
@@ -1044,7 +1058,9 @@ footer {
 }
 
 .book-controls {
-  @apply flex justify-center gap-8 py-6;
+  @apply sticky bottom-0
+  flex justify-center items-center gap-6
+  py-4 bg-[var(--bg)];
 }
 
 .book-controls button {
