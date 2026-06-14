@@ -150,7 +150,7 @@ export const products = [
       "Refined gold bracelet collection with polished finish and premium feel.",
     price: 220,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326633/Aureline/Golden_Grace_Sparkle_bsarjv.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781362994/Aureline/4pcs_Leaf_Heart_Decor_Bracelet_ofggmi.jpg",
     ],
     code: "LGB-009",
     tag: "Exclusive",
@@ -168,7 +168,7 @@ export const products = [
       "Simple pearl drop earrings designed for daily elegance and soft luxury styling.",
     price: 95,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326898/Aureline/Elegant_Imitation_Silk_Oversized_Shawl_Scarf_oygjym.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781362382/Aureline/Baroque_Pearl_Drop_Earrings___Long_Pearl_Dangle_Earrings___Minimalist_Pearl_Jewelry___Elegant_Bridal_Gift_for_Her_mq6niw.jpg",
     ],
     code: "PDE-010",
     tag: "New",
@@ -300,7 +300,7 @@ export const products = [
       "Elegant velvet heels designed to elevate formal and evening ensembles.",
     price: 190,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780760564/Aureline/download_68_vedpmk.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781366874/Aureline/download_92_oms8ix.jpg",
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780760447/Aureline/Burgundy_Velvet_Bridal_Shoes_with_Crisscross_Straps_Comfortable_Block_Heels_aihvrm.jpg",
     ],
     code: "VEH-017",
@@ -337,7 +337,7 @@ export const products = [
       "Layered necklace set featuring polished chains with a luxurious finish.",
     price: 260,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780761582/Aureline/3pcs_Simple_Punk_Style_Thick_Chain_Necklace_For_Women_fpnkhd.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781363165/Aureline/Colar_Dourado_Elegante_shein_hf2zh5.jpg",
     ],
     code: "GCL-019",
     tag: "Exclusive",
@@ -446,7 +446,7 @@ export const products = [
       "Bold cuff bracelet featuring polished gold tones and modern craftsmanship.",
     price: 215,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780326657/Aureline/Gold_Butterfly_Bracelet_Stack_Set_m0v58q.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781363720/Aureline/Criss_Cross_Cuff_Bangle_jzimak.jpg",
     ],
     code: "GCB-025",
     tag: "Exclusive",
@@ -510,6 +510,237 @@ export const products = [
     signatured: false,
     collection: "bridal-celebration",
     category: "Dress",
+  },
+  {
+    _id: "29",
+    name: "Champagne Silk Scarf",
+    description:
+      "Luxurious silk scarf featuring a soft champagne tone and elegant drape for everyday sophistication.",
+    price: 95,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781364550/Aureline/1pc_Solid_Minimalist_Fashionable_Scarf_For_Daily_Life_Bandana_Hair_Band_Head_Band_Ideal_For_Dressing_Up_Your_Look_f30ekl.jpg",
+    ],
+    code: "CSS-029",
+    tag: "New Arrival",
+    color: ["Champagne"],
+    sizes: [],
+    date: "2026-03-04",
+    signatured: false,
+    collection: "timeless-essentials",
+    category: "Scarf",
+  },
+
+  {
+    _id: "30",
+    name: "Golden Monogram Shawl",
+    description:
+      "Lightweight shawl detailed with subtle golden motifs for elevated seasonal styling.",
+    price: 120,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781365046/Aureline/1pc_Solid_Minimalist_Fashionable_Scarf_For_Daily_Life_Bandana_Hair_Band_Head_Band_Ideal_For_Dressing_Up_Your_Look_j4o0tc.jpg",
+    ],
+    code: "GMS-030",
+    tag: "Featured",
+    color: ["Gold", "Ivory"],
+    sizes: [],
+    date: "2026-03-04",
+    signatured: true,
+    collection: "golden-accents",
+    category: "Scarf",
+  },
+
+  {
+    _id: "31",
+    name: "Pearl Satin Headband",
+    description:
+      "Elegant satin headband embellished with hand-placed pearls and a soft padded silhouette.",
+    price: 65,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781365367/Aureline/download_91_zbjhut.jpg",
+    ],
+    code: "PSH-031",
+    tag: "New Arrival",
+    color: ["Ivory"],
+    sizes: [],
+    date: "2026-03-05",
+    signatured: false,
+    collection: "bridal-celebration",
+    category: "Accessories",
+  },
+
+  {
+    _id: "32",
+    name: "Crystal Bloom Hair Clip",
+    description:
+      "Luxury floral hair clip featuring crystal accents designed for bridal and evening looks.",
+    price: 72,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781365764/Aureline/Crystal_Floral_Hair_Barrette_-_Silver___Color__Silver_White___Size__Os_m31zxj.jpg",
+    ],
+    code: "CBH-032",
+    tag: "Featured",
+    color: ["Silver"],
+    sizes: [],
+    date: "2026-03-05",
+    signatured: false,
+    collection: "bridal-celebration",
+    category: "Accessories",
+  },
+
+  {
+    _id: "33",
+    name: "Ivory Satin Pumps",
+    description:
+      "Pointed-toe satin pumps crafted for elegant evenings and formal occasions.",
+    price: 210,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781367258/Aureline/Gold_Heel_Sandals_for_Women___Elegant_Closed_Toe_Heels_for_Party_Office_Wear_hvevvl.jpg",
+    ],
+    code: "ISP-033",
+    tag: "Best Seller",
+    color: ["Ivory"],
+    sizes: ["36", "37", "38", "39", "40"],
+    date: "2026-03-06",
+    signatured: true,
+    collection: "evening-elegance",
+    category: "Heels",
+  },
+
+  {
+    _id: "34",
+    name: "Golden Crystal Heels",
+    description:
+      "Strappy evening heels adorned with sparkling crystal details and metallic gold finishes.",
+    price: 240,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781369570/Aureline/Beautiful_sendle_uduj14.jpg",
+    ],
+    code: "GCH-034",
+    tag: "Featured",
+    color: ["Gold"],
+    sizes: ["36", "37", "38", "39", "40"],
+    date: "2026-03-06",
+    signatured: true,
+    collection: "golden-accents",
+    category: "Heels",
+  },
+
+  {
+    _id: "35",
+    name: "Velvet Ribbon Heels",
+    description:
+      "Sophisticated velvet heels finished with elegant ribbon ankle ties.",
+    price: 225,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781384480/Aureline/Black_Velvet_Dress_Shoes__Handmade_Evening_Shoes_bmrvr8.jpg",
+    ],
+    code: "VRH-035",
+    tag: "New Arrival",
+    color: ["Golden"],
+    sizes: ["36", "37", "38", "39", "40"],
+    date: "2026-03-07",
+    signatured: false,
+    collection: "evening-elegance",
+    category: "Heels",
+  },
+
+  {
+    _id: "36",
+    name: "Pearl Strap Sandals",
+    description:
+      "Luxury sandals detailed with delicate pearl embellishments and a refined silhouette.",
+    price: 185,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781384088/Aureline/Custom_Color_Ribbon_Bridal_Heels_Elegant_Satin_tymvm9.jpg",
+    ],
+    code: "PSS-036",
+    tag: "Featured",
+    color: ["Black"],
+    sizes: ["36", "37", "38", "39", "40"],
+    date: "2026-03-07",
+    signatured: false,
+    collection: "bridal-celebration",
+    category: "Heels",
+  },
+
+  {
+    _id: "37",
+    name: "Signature Leather Belt",
+    description:
+      "Premium leather belt finished with a polished gold buckle and timeless design.",
+    price: 88,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781388441/Aureline/download_97_qgtrb6.jpg",
+    ],
+    code: "SLB-037",
+    tag: "Featured",
+    color: ["Tan"],
+    sizes: ["S", "M", "L"],
+    date: "2026-03-08",
+    signatured: true,
+    collection: "modern-classics",
+    category: "Accessories",
+  },
+
+  {
+    _id: "38",
+    name: "Crystal Evening Gloves",
+    description:
+      "Elegant evening gloves featuring subtle crystal embellishments for special occasions.",
+    price: 92,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781442767/Aureline/Temu_Guantes_de_boda_vestido_de_novia_rosario_de_diamantes_de_imitaci%C3%B3n_paquete_de_pulseras_de_recuerdo_guantes_de_boda_sin_dedos_flor_dnsnax.jpg",
+    ],
+    code: "CEG-038",
+    tag: "New Arrival",
+    color: ["White"],
+    sizes: ["S", "M", "L"],
+    date: "2026-03-08",
+    signatured: false,
+    collection: "bridal-celebration",
+    category: "Accessories",
+  },
+
+  {
+    _id: "39",
+    name: "Pearl Chain Belt",
+    description:
+      "Decorative chain belt crafted with luminous pearls and gold-tone hardware.",
+    price: 78,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443000/Aureline/download_98_bcworn.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781442999/Aureline/Most_trending_product_is_now_on_hue__Wanna_upgrade_your_look__Want_something_different__Look_gorgeous___Try_these_beautiful_waist_belt_from_Shein...__Taking_hj99ly.jpg",
+    ],
+    code: "PCB-039",
+    tag: "Featured",
+    color: ["Gold", "Pearl"],
+    sizes: [],
+    date: "2026-03-09",
+    signatured: false,
+    collection: "golden-accents",
+    category: "Accessories",
+  },
+
+  {
+    _id: "40",
+    name: "Bloom Embroidered Shawl",
+    description:
+      "Elegant floral shawl adorned with intricate golden thread embroidery, designed to complement festive attire and timeless evening looks.",
+    price: 145,
+    image: [
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443553/Aureline/available_now_entre_link_tb7gnn.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443551/Aureline/Embroidered_Flower_Scarf_Thin_Breathable_Shawl_Mature_Style_Sunscreen_Travel_Scarf_For_Women__item_link__https___temu_to_k_e7quykyagvb_gfmdpp.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443299/Aureline/1pc_Women_s_Floral_Golden_Thread_Embroidery_Shawl_Breathable_Windproof_Design_Elegant_Decorative_Scarf_For_Summer_Travel_Sun_Protection_Autumn_Winter_Gift_For_Mom_Suitable_For_Dress_Cheongsam_zg7otb.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443552/Aureline/1pc_Women_s_Elegant_Flower_Cutting_Faux_Pearl_Lattice_Silk_Scarf_Solid_Color_Shawl_Casual_Headscarf_Neck_Scarf_Suitable_For_Daily_Wear_In_Autumn_And_Winter_Accessories_Women_y5pr3g.jpg"
+    ],
+    code: "CTW-040",
+    tag: "Best Seller",
+    color: ["Ivory", "Gray", "Blue", "Brown"],
+    sizes: [],
+    date: "2026-03-09",
+    signatured: true,
+    collection: "timeless-essentials",
+    category: "Scarf",
   },
 ];
 
@@ -657,7 +888,7 @@ export const catalog = [
     coverImage:
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1780484422/Aureline/Ivory_Gold_Eid_Anarkali___Elegant_Festive_Wear_Inspiration_h217wa.jpg",
     description: "Sophisticated evening wear and statement pieces.",
-    
+
     products: [
       "2", // Ivory Silk Evening Dress
       "5", // Ivory Silk Suit Set

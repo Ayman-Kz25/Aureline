@@ -244,7 +244,7 @@ body {
 }
 
 .product-item {
-  @apply flex-shrink-0 w-[200px] sm:w-[240px] md:w-[260px] relative flex flex-col bg-white rounded-lg border border-[rgba(0,0,0,0.05)] pb-3.5 scroll-smooth;
+  @apply flex-shrink-0 w-[200px] sm:w-[240px] md:w-[260px] relative flex flex-col bg-white rounded-lg outline-none border border-[rgba(0,0,0,0.05)] pb-3.5 scroll-smooth;
   scroll-snap-align: start;
 }
 
