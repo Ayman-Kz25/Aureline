@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Layout bg="bg-[var(--secondary)]">
       <Hero />
-      <Features />
+      <Features bg="bg-[var(--bg)]" />
       <Signature />
       <Atelier />
       <Archive />

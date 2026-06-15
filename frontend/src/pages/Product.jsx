@@ -5,6 +5,8 @@ import { CartPlus } from "react-bootstrap-icons";
 
 import Layout from "../components/Layout";
 import { ShopContext } from "../context/ShopContext";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Features from "../components/Features";
 
 const colorMap = {
   Gold: "#e3b883",
@@ -71,6 +73,11 @@ const Product = () => {
 
   return (
     <Layout bg={`bg-[var(--secondary)]`}>
+      <Breadcrumbs links={[
+        {label: "Home", path: "/"},
+        {label: "Shop", path: "/shop"},
+        {label: productData.name},
+      ]} />
       <section className="product-page">
 
         {/* LEFT SIDE */}
@@ -245,6 +252,8 @@ const Product = () => {
         </p>
 
       </section>
+
+      <Features bg={} />
 
     </Layout>
   );
