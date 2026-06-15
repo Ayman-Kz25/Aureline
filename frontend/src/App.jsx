@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Catalog from './components/Catalog';
 import ScrollToTop from './components/ScrollToTop';
+import CatalogBook from './components/CatalogBook';
 
 const App = () => {
   return (
@@ -21,7 +22,6 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/shop" element={<Shop/>} />
         <Route path="/collection" element={<Collection/>} />
-        <Route path="/collection/:colId" element={<Catalog />} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product/:productId" element={<Product/>} />

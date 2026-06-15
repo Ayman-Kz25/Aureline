@@ -14,7 +14,6 @@ const Home = () => {
       <Hero />
       <Features bg="bg-[var(--bg)]" />
       <Signature />
-      <Atelier />
       <Archive />
       <Story />
       <Newsletter />

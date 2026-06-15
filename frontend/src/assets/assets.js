@@ -708,7 +708,7 @@ export const products = [
       "Decorative chain belt crafted with luminous pearls and gold-tone hardware.",
     price: 78,
     image: [
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443000/Aureline/download_98_bcworn.jpg",
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781525616/Aureline/download_98_bcworn.jpg",
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781442999/Aureline/Most_trending_product_is_now_on_hue__Wanna_upgrade_your_look__Want_something_different__Look_gorgeous___Try_these_beautiful_waist_belt_from_Shein...__Taking_hj99ly.jpg",
     ],
     code: "PCB-039",

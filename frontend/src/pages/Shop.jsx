@@ -82,7 +82,7 @@ const Shop = () => {
         setCurrentPage={setCurrentPage}
         totalPages={totalPages}
       />
-      <Features />
+      <Features bg={`bg-[var(--bg)]`}/>
     </Layout>
   );
 };

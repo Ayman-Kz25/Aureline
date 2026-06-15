@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Atelier = () => {
   const { collection } = useContext(ShopContext);
 
+  
   return (
     <div className="catalog">
       <div className="cat-content">

@@ -6,10 +6,12 @@ const ProductItem = ({ id, image, tag, name, price }) => {
   const { currency } = useContext(ShopContext);
   return (
     <Link to={`/product/${id}`} className="product-item">
-      <img
+      <div className="product-item-img">
+        <img
         src={image[0]}
         alt=""
       />
+      </div>
       {tag ? <span className="tag exclusive">{tag}</span> : ""}
       <h3>{name}</h3>
       <p>{currency}{price}.00</p>
