@@ -1171,8 +1171,12 @@ footer {
   @apply flex-1 flex flex-col gap-6;
 }
 
+.product-tag-badge {
+  @apply uppercase tracking-widest text-xs md:text-sm  opacity-0 md:opacity-100;
+}
+
 .product-code {
-  @apply text-sm uppercase tracking-widest text-gray-500;
+  @apply text-xs md:text-sm uppercase tracking-widest text-gray-500;
 }
 
 .product-info h1 {
@@ -1299,10 +1303,6 @@ footer {
   p-6 md:p-8
   rounded-xl
   bg-[var(--bg)];
-}
-
-.product-tag-badge {
-  @apply uppercase tracking-widest text-xs md:text-sm;
 }
 
 .product-tag {
