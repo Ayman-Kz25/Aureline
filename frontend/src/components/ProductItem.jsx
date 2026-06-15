@@ -10,7 +10,7 @@ const ProductItem = ({ id, image, tag, name, price }) => {
         src={image[0]}
         alt=""
       />
-      <span className="tag exclusive">{tag}</span>
+      {tag ? <span className="tag exclusive">{tag}</span> : ""}
       <h3>{name}</h3>
       <p>{currency}{price}.00</p>
     </Link>

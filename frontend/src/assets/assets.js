@@ -468,7 +468,7 @@ export const products = [
     ],
     code: "PDV-011",
     tag: "Exclusive",
-    color: ["Silver", "Diamond White"],
+    color: ["Silver"],
     sizes: [],
     date: "2026-02-01",
     signatured: false,

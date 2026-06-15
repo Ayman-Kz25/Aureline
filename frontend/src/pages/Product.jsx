@@ -7,6 +7,9 @@ import Layout from "../components/Layout";
 import { ShopContext } from "../context/ShopContext";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Features from "../components/Features";
+import ProductCard from "../components/ProductCard";
+import ProductItem from "../components/ProductItem";
+import Newsletter from "../components/Newsletter";
 
 const colorMap = {
   Gold: "#e3b883",
@@ -27,7 +30,7 @@ const colorMap = {
   Cream: "#EDE8D0",
   White: "#FFFFFF",
   "Crimson Red": "#6d131e",
-  Silver: "#c4c4c4",
+  Silver: "#E0E0E0",
   Chocolate: "#713600",
   "Sage Green": "#9CAF88",
   Green: "#06402B",
@@ -45,9 +48,7 @@ const Product = () => {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    const product = products.find(
-      (item) => item._id === productId
-    );
+    const product = products.find((item) => item._id === productId);
 
     if (product) {
       setProductData(product);
@@ -71,56 +72,47 @@ const Product = () => {
     return <div className="opacity-0"></div>;
   }
 
+  const relatedProducts = products.filter(
+    (item) =>
+      item.category === productData.category && item._id !== productData._id,
+  );
+
   return (
     <Layout bg={`bg-[var(--secondary)]`}>
-      <Breadcrumbs links={[
-        {label: "Home", path: "/"},
-        {label: "Shop", path: "/shop"},
-        {label: productData.name},
-      ]} />
+      <Breadcrumbs
+        links={[
+          { label: "Home", path: "/" },
+          { label: "Shop", path: "/shop" },
+          { label: productData.name },
+        ]}
+      />
       <section className="product-page">
-
         {/* LEFT SIDE */}
         <div className="product-gallery">
-
           <div className="product-thumbnails">
             {productData.image.map((item, index) => (
               <img
                 key={index}
                 src={item}
                 alt={productData.name}
-                className={`thumbnail ${
-                  image === item ? "active"
-                  : ""
-                }`}
+                className={`thumbnail ${image === item ? "active" : ""}`}
                 onClick={() => setImage(item)}
               />
             ))}
           </div>
 
           <div className="product-main-image">
-            <img
-              src={image}
-              alt={productData.name}
-            />
+            <img src={image} alt={productData.name} />
           </div>
-
         </div>
 
         {/* RIGHT SIDE */}
         <div className="product-info">
+          <span className="product-tag-badge">{productData.tag}</span>
 
-          <span className="product-tag-badge">
-            {productData.tag}
-          </span>
+          <h1>{productData.name}</h1>
 
-          <h1>
-            {productData.name}
-          </h1>
-
-          <span className="product-code">
-            {productData.code}
-          </span>
+          <span className="product-code">{productData.code}</span>
 
           <p className="product-price">
             {currency}
@@ -137,18 +129,11 @@ const Product = () => {
               {productData.color.map((item) => (
                 <button
                   key={item}
-                  className={`color-circle ${
-                    color === item
-                      ? "active"
-                      : ""
-                  }`}
+                  className={`color-circle ${color === item ? "active" : ""}`}
                   style={{
-                    backgroundColor:
-                      colorMap[item] || "#ccc",
+                    backgroundColor: colorMap[item] || "#ccc",
                   }}
-                  onClick={() =>
-                    setColor(item)
-                  }
+                  onClick={() => setColor(item)}
                 />
               ))}
             </div>
@@ -157,104 +142,77 @@ const Product = () => {
           {/* SIZES */}
           {productData.sizes.length > 0 && (
             <div className="product-section">
-
               <p>
                 Size:
-                <strong>
-                  {" "}
-                  {selectedSize}
-                </strong>
+                <strong> {selectedSize}</strong>
               </p>
 
               <div className="size-options">
-                {productData.sizes.map(
-                  (item) => (
-                    <button
-                      key={item}
-                      className={`size-btn ${
-                        selectedSize === item
-                          ? "active"
-                          : ""
-                      }`}
-                      onClick={() =>
-                        setSelectedSize(item)
-                      }
-                    >
-                      {item}
-                    </button>
-                  )
-                )}
+                {productData.sizes.map((item) => (
+                  <button
+                    key={item}
+                    className={`size-btn ${
+                      selectedSize === item ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedSize(item)}
+                  >
+                    {item}
+                  </button>
+                ))}
               </div>
-
             </div>
           )}
 
           {/* QUANTITY */}
           <div className="product-section">
-
             <p>Quantity</p>
 
             <div className="quantity-box">
-
-              <button
-                onClick={
-                  decreaseQuantity
-                }
-              >
+              <button onClick={decreaseQuantity}>
                 <Minus size={18} />
               </button>
 
-              <span>
-                {quantity}
-              </span>
+              <span>{quantity}</span>
 
-              <button
-                onClick={
-                  increaseQuantity
-                }
-              >
+              <button onClick={increaseQuantity}>
                 <Plus size={18} />
               </button>
-
             </div>
-
           </div>
 
           {/* ACTIONS */}
           <div className="product-actions">
-
             <button className="cart-btn">
               <CartPlus size={18} />
               Add To Cart
             </button>
 
-            <button className="buy-btn">
-              Buy Now
-            </button>
-
+            <button className="buy-btn">Buy Now</button>
           </div>
-
         </div>
-
       </section>
 
       {/* DESCRIPTION */}
       <section className="product-description">
-
-        <span className="product-tag">
-          {productData.tag}
-        </span>
+        <span className="product-tag">{productData.tag}</span>
 
         <h2>Description</h2>
 
-        <p>
-          {productData.description}
-        </p>
-
+        <p>{productData.description}</p>
       </section>
 
-      <Features bg={} />
+      <Features bg={`bg-[var(--secondary)]`} />
 
+      <section className="product-suggestion">
+        <h2>You may also like</h2>
+        <div className="suggestion-grid">
+          {relatedProducts.map((item) => (
+              <ProductItem key={item._id} id={item._id} image={item.image} name={item.name} price={item.price} />
+            ))}
+        </div>
+      </section>
+
+      <Newsletter />
     </Layout>
   );
 };

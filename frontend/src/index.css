@@ -1123,14 +1123,13 @@ footer {
   @apply text-[var(--primary)];
 }
 
-/* Product Detail */
+/* Product Detail - Product */
 .product-page {
   @apply flex flex-col lg:flex-row gap-10 lg:gap-16
   px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]
   py-10 bg-[var(--bg)] pt-10;
 }
 
-/* GALLERY */
 .product-gallery {
   @apply flex-1 flex flex-col-reverse lg:flex-row gap-4;
 }
@@ -1166,7 +1165,6 @@ footer {
   @apply w-full h-full object-cover;
 }
 
-/* PRODUCT INFO */
 .product-info {
   @apply flex-1 flex flex-col gap-6;
 }
@@ -1191,7 +1189,6 @@ footer {
   text-[var(--primary)];
 }
 
-/* SECTIONS */
 .product-section {
   @apply flex flex-col gap-3;
 }
@@ -1201,7 +1198,6 @@ footer {
   font-family: "Manrope", sans-serif;
 }
 
-/* COLORS */
 .color-options {
   @apply flex flex-wrap gap-3;
 }
@@ -1222,7 +1218,6 @@ footer {
   transform: scale(1.12);
 }
 
-/* SIZES */
 .size-options {
   @apply flex flex-wrap gap-3;
 }
@@ -1244,7 +1239,6 @@ footer {
   border-[var(--primary)];
 }
 
-/* QUANTITY */
 .quantity-box {
   @apply flex items-center
   w-fit
@@ -1266,7 +1260,6 @@ footer {
   @apply px-5 font-medium;
 }
 
-/* BUTTONS */
 .product-actions {
   @apply flex flex-col sm:flex-row gap-4 mt-2;
 }
@@ -1296,9 +1289,9 @@ footer {
   opacity: 0.9;
 }
 
-/* DESCRIPTION */
+/* Product Description - Product */
 .product-description {
-  @apply mt-10
+  @apply my-10
   mx-4 sm:mx-[5vw] md:mx-[7vw] lg:mx-[9vw]
   p-6 md:p-8
   rounded-xl
@@ -1323,7 +1316,6 @@ footer {
   font-family: "Manrope", sans-serif;
 }
 
-/* MOBILE */
 @media (max-width: 1024px) {
   .product-page {
     @apply gap-8;
@@ -1350,4 +1342,24 @@ footer {
   .product-actions {
     @apply flex-col;
   }
+}
+
+/* Product Suggestions - Product */
+.product-suggestion {
+  @apply mt-20 mb-10
+  mx-4 sm:mx-[5vw] md:mx-[7vw] lg:mx-[9vw]
+  p-6 md:p-8;
+}
+
+.product-suggestion h2 {
+  @apply text-center md:text-left text-3xl md:text-4xl mb-4
+  text-[var(--primary)] font-[Cormorant_Garamond];
+}
+
+.product-suggestion .suggestion-grid {
+  @apply flex flex-nowrap gap-4 overflow-x-auto overflow-y-hidden py-4;
+  max-width: 100%;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
