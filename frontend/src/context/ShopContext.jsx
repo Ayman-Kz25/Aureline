@@ -1,6 +1,14 @@
 import { createContext } from "react";
-import { catalog, collection, letter, products, slide } from "../assets/assets";
+import {
+  cartItems,
+  catalog,
+  collection,
+  letter,
+  products,
+  slide,
+} from "../assets/assets";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
@@ -15,6 +23,7 @@ const ShopContextProvider = (props) => {
     catalog,
     currency,
     delivery_fee,
+    cartItems,
   };
 
   return (

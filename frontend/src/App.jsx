@@ -9,10 +9,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
 import Login from './pages/Login';
-import Navbar from './components/Navbar';
-import Catalog from './components/Catalog';
 import ScrollToTop from './components/ScrollToTop';
-import CatalogBook from './components/CatalogBook';
 
 const App = () => {
   return (

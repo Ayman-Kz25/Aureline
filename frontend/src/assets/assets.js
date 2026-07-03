@@ -731,7 +731,7 @@ export const products = [
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443553/Aureline/available_now_entre_link_tb7gnn.jpg",
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443551/Aureline/Embroidered_Flower_Scarf_Thin_Breathable_Shawl_Mature_Style_Sunscreen_Travel_Scarf_For_Women__item_link__https___temu_to_k_e7quykyagvb_gfmdpp.jpg",
       "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443299/Aureline/1pc_Women_s_Floral_Golden_Thread_Embroidery_Shawl_Breathable_Windproof_Design_Elegant_Decorative_Scarf_For_Summer_Travel_Sun_Protection_Autumn_Winter_Gift_For_Mom_Suitable_For_Dress_Cheongsam_zg7otb.jpg",
-      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443552/Aureline/1pc_Women_s_Elegant_Flower_Cutting_Faux_Pearl_Lattice_Silk_Scarf_Solid_Color_Shawl_Casual_Headscarf_Neck_Scarf_Suitable_For_Daily_Wear_In_Autumn_And_Winter_Accessories_Women_y5pr3g.jpg"
+      "https://res.cloudinary.com/dhjf7rok5/image/upload/v1781443552/Aureline/1pc_Women_s_Elegant_Flower_Cutting_Faux_Pearl_Lattice_Silk_Scarf_Solid_Color_Shawl_Casual_Headscarf_Neck_Scarf_Suitable_For_Daily_Wear_In_Autumn_And_Winter_Accessories_Women_y5pr3g.jpg",
     ],
     code: "CTW-040",
     tag: "Best Seller",
@@ -981,3 +981,16 @@ export const catalog = [
     ],
   },
 ];
+
+export const cartItems = {
+  12: {
+    color: "Gold",
+    size: "M",
+    quantity: 2,
+  },
+  4: {
+    color: "Black",
+    size: "L",
+    quantity: 1,
+  },
+};
