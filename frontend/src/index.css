@@ -1492,8 +1492,6 @@ footer {
   filter: brightness(0.9);
 }
 
-/* MOBILE */
-
 @media (max-width: 1024px) {
   .cart-container {
     @apply grid-cols-1;
@@ -1521,3 +1519,9 @@ footer {
     @apply text-3xl;
   }
 }
+
+/* Checkout Page */
+.checkout-container{
+  @apply max-w-7xl mx-auto px-4 md:px-8 py-12 grid lg:grid-cols-[2fr_1fr] gap-12;
+}
+
