@@ -30,7 +30,6 @@ const colorMap = {
   Cream: "#EDE8D0",
   White: "#FFFFFF",
   "Crimson Red": "#6d131e",
-  Silver: "#E0E0E0",
   Chocolate: "#713600",
   "Sage Green": "#9CAF88",
   Green: "#06402B",

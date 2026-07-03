@@ -1392,13 +1392,11 @@ footer {
 }
 
 .cart-heading span {
-  @apply text-xs md:text-sm text-gray-500;
+  @apply hidden md:block md:text-sm text-gray-500;
 }
 
 .cart-item {
-  @apply flex gap-6
-  items-center py-6
-  border-b-2 border-gray-200;
+  @apply flex gap-6 items-center py-6 border-b-2 border-gray-200;
 }
 
 .cart-item:last-of-type {
@@ -1521,7 +1519,93 @@ footer {
 }
 
 /* Checkout Page */
-.checkout-container{
+.checkout-container {
   @apply max-w-7xl mx-auto px-4 md:px-8 py-12 grid lg:grid-cols-[2fr_1fr] gap-12;
 }
 
+/* Checkout Form - Checkout Page */
+.checkout-form {
+  @apply flex flex-col gap-10;
+}
+
+.checkout-section {
+  @apply bg-white rounded-2xl p-8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-section h2 {
+  @apply text-3xl mb-8 font-[Cormorant_Garamond] text-[var(--primary)] font-semibold;
+}
+
+.checkout-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.form-group {
+  @apply flex flex-col gap-2;
+}
+
+.form-group.full {
+  @apply md:col-span-2;
+}
+
+.form-group label {
+  @apply text-sm uppercase tracking-wider;
+  color: var(--primary);
+  font-family: "Manrope", sans-serif;
+}
+
+.form-group input {
+  @apply px-4 py-3 rounded-xl;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: var(--bg);
+  font-family: "Manrope", sans-serif;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(193, 154, 107, 0.15);
+}
+
+/* Payment */
+
+.payment-options {
+  @apply flex flex-col gap-4;
+}
+
+.payment-card {
+  @apply flex items-center gap-4 rounded-xl p-5 cursor-pointer;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+}
+
+.payment-card:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.payment-card input {
+  display: none;
+}
+
+.payment-card.active {
+  border-color: var(--primary);
+  background: rgba(193, 154, 107, 0.08);
+}
+
+.payment-card span {
+  @apply font-medium;
+  font-family: "Manrope", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .checkout-section {
+    @apply p-6;
+  }
+
+  .checkout-section h2 {
+    @apply text-2xl;
+  }
+}

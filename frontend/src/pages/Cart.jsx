@@ -5,8 +5,7 @@ import { useContext, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 
 const Cart = () => {
-  const { cartItems, products, currency, removeFromCart } =
-    useContext(ShopContext);
+  const { cartItems, products, currency } = useContext(ShopContext);
 
   const [cartItem, setCartItems] = useState(cartItems);
 
@@ -29,6 +28,16 @@ const Cart = () => {
           quantity,
         };
       }
+
+      return updatedCart;
+    });
+  };
+
+  const removeFromCart = (productId) => {
+    setCartItems((prev) => {
+      const updatedCart = { ...prev };
+
+      delete updatedCart[productId];
 
       return updatedCart;
     });
